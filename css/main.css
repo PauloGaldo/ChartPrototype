@@ -1,0 +1,53 @@
+/*CONTENEDOR CHART*/
+.chart-container {
+    display: block;
+}
+
+.chart-container .chart-slot {
+    display: inline-block;
+    width: 100px;
+}
+/*CONTENEDOR ARROW*/
+.arrow-container {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.arrow-container .markers {
+    display: block;
+}
+
+.arrow-container .markers.green {
+    color: #009688;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.arrow-container .markers.red {
+    color: #ff2a1a;
+    font-size: 16px;
+}
+
+.arrow-container .arrow {
+    display: inline-block;
+    width: 100px;
+}
+
+.arrow-container .arrow .line {
+    margin-top: 7px;
+    width: 70px;
+    background: rgba(75, 192, 192, 0.2);
+    height: 5px;
+    float: left;
+}
+
+.arrow-container .arrow .point {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 30px solid rgba(75, 192, 192, 0.2);
+    float: right;
+}
