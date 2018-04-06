@@ -81,6 +81,32 @@
                 legend: {
                     display: false
                 },
+                tooltips: {
+                    callbacks: {
+                        title: function (tooltipItem, data) {
+                            return data['labels'][tooltipItem[0]['index']];
+                        },
+                        label: function (tooltipItem, data) {
+                            return 'Cantidad: ' + data['datasets'][0]['data'][tooltipItem['index']];
+                        },
+                        labelTextColor: function (tooltipItem, chart) {
+                            return '#FFF';
+                        },
+                        afterLabel: function (tooltipItem, data) {
+                            var dataset = data.datasets[tooltipItem.datasetIndex];
+                            var total = dataset.data.reduce(function (previousValue, currentValue, currentIndex, array) {
+                                return previousValue + currentValue;
+                            });
+                            var currentValue = dataset.data[tooltipItem.index];
+                            var precentage = Math.floor(((currentValue / total) * 100) + 0.5);
+                            return precentage + "%";
+                        }
+                    },
+                    titleFontSize: 15,
+                    titleAlign: 'left',
+                    bodyFontSize: 14,
+                    displayColors: false
+                },
                 total: data.total
             }
         });
