@@ -7,29 +7,34 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link id="bsdp-css" href="https://bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.multidatespicker.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
-    <div class="row">
-        <div class="input-group input-daterange">
-            <input type="text" class="form-control" value="2012-04-05">
-            <div class="input-group-addon">to</div>
-            <input type="text" class="form-control" value="2012-04-19">
+    <div class="contenedor-principal">
+        <div class="row">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="mdp-demo">Fecha: </label>
+                    <input class="form-control" id="mdp-demo">
+                </div>
+                <button type="button" class="btn btn-default">Buscar</button>
+                <button type="button" class="btn btn-default">Exportar Excel</button>
+            </form>
         </div>
+        <div id="main-container"></div>
     </div>
-    <div id="main-container"></div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="https://bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script src="https://bootstrap-datepicker/js/locales/bootstrap-datepicker.es.min.js" charset="UTF-8"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/Chart.bundle.js"></script>
+    <script src="js/jquery-ui.multidatespicker.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -2,6 +2,13 @@
 
     "use strict";
 
+    $('#mdp-demo').multiDatesPicker({
+        maxPicks: 2, // cantidad maxima de fechas a seleccionar
+        minDate: -30, // 30 dias atras
+        maxDate: 0, // Hoy
+        addDates: [new Date()]
+    });
+
     // Copia de la funcionalidad de dibujado del chart
     var originalLineDraw = Chart.controllers.doughnut.prototype.draw;
 

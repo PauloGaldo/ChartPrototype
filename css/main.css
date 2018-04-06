@@ -1,3 +1,11 @@
+.contenedor-principal{
+    margin: 20px;
+}
+
+.contenedor-principal .form-inline{
+    margin: 20px;
+}
+
 /*CONTENEDOR CHART*/
 .chart-container {
     display: block;
