@@ -1,0 +1,20 @@
+{
+    "phases": [
+        { "id": 1, "anormal_count": 1000, "nornal_count": 10000, "total": 1000 },
+        { "id": 2, "anormal_count": 1000, "nornal_count": 10000, "total": 1000 },
+        { "id": 3, "anormal_count": 1100, "nornal_count": 10000, "total": 1000 },
+        { "id": 4, "anormal_count": 1000, "nornal_count": 10000, "total": 1000 },
+        { "id": 5, "anormal_count": 1000, "nornal_count": 10000, "total": 1000 },
+        { "id": 6, "anormal_count": 1000, "nornal_count": 10000, "total": 1000 },
+        { "id": 7, "anormal_count": 1000, "nornal_count": 10000, "total": 1000 }
+    ],
+    "intervals": [
+        { "id": 1, "anormal_time": "10 min.", "normal_time": "10 segs." },
+        { "id": 2, "anormal_time": "20 min.", "normal_time": "30 segs." },
+        { "id": 3, "anormal_time": "1 min.", "normal_time": "40 segs." },
+        { "id": 4, "anormal_time": "14 min.", "normal_time": "10 segs." },
+        { "id": 5, "anormal_time": "10 min.", "normal_time": "20 segs." },
+        { "id": 6, "anormal_time": "100 min.", "normal_time": "10 segs." }
+    ],
+    "unit": ""
+}

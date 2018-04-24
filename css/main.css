@@ -1,20 +1,22 @@
-.contenedor-principal{
-    margin: 20px;
+.contenedor-principal {
+    margin: 10px;
 }
 
-.contenedor-principal .form-inline{
-    margin: 20px;
+.contenedor-principal .form-inline {
+    margin: 10px;
 }
 
 /*CONTENEDOR CHART*/
 .chart-container {
     display: block;
+    width: fit-content;
 }
 
 .chart-container .chart-slot {
     display: inline-block;
     width: 100px;
 }
+
 /*CONTENEDOR ARROW*/
 .arrow-container {
     display: inline-block;
@@ -43,7 +45,7 @@
     width: 100px;
 }
 
-.arrow-container .arrow .line {
+.arrow-container .arrow .line-right {
     margin-top: 7px;
     width: 70px;
     background: rgba(75, 192, 192, 0.2);
@@ -51,11 +53,44 @@
     float: left;
 }
 
-.arrow-container .arrow .point {
+.arrow-container .arrow .line-left {
+    margin-top: 7px;
+    width: 70px;
+    background: rgba(75, 192, 192, 0.2);
+    height: 5px;
+    float: right;
+}
+
+.arrow-container .arrow .line-down {
+    margin-top: 7px;
+    width: 5px;
+    background: rgba(75, 192, 192, 0.2);
+    height: 70px;
+    margin: 0px 7px;
+}
+
+.arrow-container .arrow .point-right {
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 30px solid rgba(75, 192, 192, 0.2);
     float: right;
+}
+
+.arrow-container .arrow .point-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 30px solid rgba(75, 192, 192, 0.2);
+    float: left;
+}
+
+.arrow-container .arrow .point-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 30px solid rgba(75, 192, 192, 0.2);    
 }
